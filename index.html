@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Pizzaria</title>
+        <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="https://maxdn.boostrapcdn.com/boostrap/3.4.0/css/boostap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxdn.boostrapcdn.com/boostrap/3.4.0/js/boostrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"> </script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#">Pizzaria</a>
+            <div class="topnav-right">
+            <a href="#viewblock">View menu</a>
+            <a href="#addtopping">Add Menu</a>
+            </div>
+        </div>
+        <div class="row" id="viewbook">
+            <div class="img_div">
+                <img class="img-responsive" src="images/pizza.png">
+            </div>
+            <div class="menu_div">
+                <button id="menu_list" onclick="getmenu()">Show Menu</button>
+                <div id="display_menu"></div>
+            </div>
+        </div>
+        <div class="newrow" id="addtopings">
+            <div class="block1">
+                <input id="add_item" placeholder="type here to add topping?"/><br>
+                <button id="add_toppings" onclick="add_item()">Recommend a new pizza</button>
+            </div>
+            <div class="block2">
+                <div id="display_addedmemu">
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="img-responsive" src="images/topping.png">
+        </div>
+    </body>
+</html>
